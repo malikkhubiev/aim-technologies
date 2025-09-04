@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Retail AI Assistant Demo</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            margin: 24px;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+        }
+
+        section {
+            margin: 24px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background: #f5f5f5;
+            text-align: left;
+        }
+
+        input,
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Retail AI Assistant + SalesBot</h1>
+    <p>Простой демо для рекомендаций и TTS (SpeechKit).</p>
+
+    <section>
+        <h2>Рекомендации</h2>
+        <input id="q" placeholder="Например: игровой ноутбук" size="40" />
+        <button id="btn-rec">Искать</button>
+        <table id="tbl" style="margin-top:12px">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Категория</th>
+                    <th>Цена</th>
+                    <th>Скидка</th>
+                    <th>Маржа</th>
+                    <th>Счёт</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Озвучка (TTS)</h2>
+        <input id="tts-text" placeholder="Текст для озвучки" size="40" />
+        <button id="btn-tts">Синтез</button>
+        <audio id="player" controls style="display:block;margin-top:12px"></audio>
+    </section>
+
+    <section>
+        <h2>История взаимодействий (демо)</h2>
+        <button id="btn-history">Обновить</button>
+        <table id="tbl-hist" style="margin-top:12px">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Канал</th>
+                    <th>Телефон</th>
+                    <th>Интент</th>
+                    <th>Статус</th>
+                    <th>Сделка</th>
+                    <th>Сумма</th>
+                    <th>Когда</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script>
+        const api = (path) => path; // same origin
+
+        document.getElementById('btn-rec').onclick = async () => {
+            const query = document.getElementById('q').value || '';
+            const res = await fetch(api('/recommend/query'), {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query })
+            });
+            const tbody = document.querySelector('#tbl tbody');
+            tbody.innerHTML = '';
+            if (!res.ok) {
+                tbody.innerHTML = '<tr><td colspan="6">Нет рекомендаций</td></tr>';
+                return;
+            }
+            const data = await res.json();
+            data.forEach(p => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${p.name}</td><td>${p.category}</td><td>${p.price}</td><td>${(p.discount * 100).toFixed(0)}%</td><td>${(p.margin_rate * 100).toFixed(0)}%</td><td>${p.score}</td>`;
+                tbody.appendChild(tr);
+            });
+        };
+
+        document.getElementById('btn-tts').onclick = async () => {
+            const text = document.getElementById('tts-text').value || 'Здравствуйте! Это демо.';
+            const res = await fetch(api('/jaicp/tts'), {
+                method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ text })
+            });
+            const data = await res.json();
+            const hex = data.audio_hex || '';
+            if (!hex) return;
+            const bytes = new Uint8Array(hex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+            const blob = new Blob([bytes], { type: 'audio/wav' });
+            const url = URL.createObjectURL(blob);
+            const player = document.getElementById('player');
+            player.src = url;
+            player.play();
+        };
+
+        document.getElementById('btn-history').onclick = async () => {
+            const res = await fetch(api('/jaicp/history'));
+            const tbody = document.querySelector('#tbl-hist tbody');
+            tbody.innerHTML = '';
+            if (!res.ok) {
+                tbody.innerHTML = '<tr><td colspan="8">Нет данных</td></tr>';
+                return;
+            }
+            const data = await res.json();
+            (data.items || []).forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.interaction_id}</td><td>${row.channel}</td><td>${row.customer_phone}</td><td>${row.intent}</td><td>${row.result}</td><td>${row.sale}</td><td>${row.amount}</td><td>${row.created_at}</td>`;
+                tbody.appendChild(tr);
+            });
+        };
+    </script>
+</body>
+
+</html>

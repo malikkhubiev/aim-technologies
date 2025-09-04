@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Игровой ноутбук MSI",
+    "category": "Наушники",
+    "price": 21204,
+    "discount": 21,
+    "margin": 7,
+    "score": 0.72
+  },
+  {
+    "name": "MacBook Pro 14",
+    "category": "Ноутбук",
+    "price": 119910,
+    "discount": 47,
+    "margin": 5,
+    "score": 0.7
+  },
+  {
+    "name": "iPhone 15 Pro",
+    "category": "Монитор",
+    "price": 141968,
+    "discount": 14,
+    "margin": 26,
+    "score": 0.77
+  },
+  {
+    "name": "Samsung Galaxy S24",
+    "category": "Смартфон",
+    "price": 42748,
+    "discount": 9,
+    "margin": 32,
+    "score": 0.64
+  },
+  {
+    "name": "AirPods Pro",
+    "category": "Наушники",
+    "price": 58558,
+    "discount": 41,
+    "margin": 14,
+    "score": 0.67
+  },
+  {
+    "name": "Sony WH-1000XM5",
+    "category": "Ноутбук",
+    "price": 56213,
+    "discount": 37,
+    "margin": 25,
+    "score": 0.79
+  },
+  {
+    "name": "iPad Air",
+    "category": "Монитор",
+    "price": 139473,
+    "discount": 29,
+    "margin": 24,
+    "score": 0.61
+  },
+  {
+    "name": "Xiaomi Pad 6",
+    "category": "Ноутбук",
+    "price": 73988,
+    "discount": 37,
+    "margin": 22,
+    "score": 0.79
+  },
+  {
+    "name": "LG UltraFine 27",
+    "category": "Смартфон",
+    "price": 63864,
+    "discount": 12,
+    "margin": 7,
+    "score": 0.75
+  }
+]

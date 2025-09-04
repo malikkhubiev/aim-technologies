@@ -1,0 +1,79 @@
+[
+    {
+        "id": "nb-001",
+        "name": "Игровой ноутбук Aster GX15",
+        "price": 89990,
+        "category": "laptop",
+        "discount": 0.15,
+        "margin_rate": 0.28,
+        "keywords": [
+            "игры",
+            "игровой",
+            "ноутбук",
+            "laptop",
+            "gaming",
+            "nvidia"
+        ]
+    },
+    {
+        "id": "nb-002",
+        "name": "Ноутбук OfficeLite 14",
+        "price": 42990,
+        "category": "laptop",
+        "discount": 0.10,
+        "margin_rate": 0.22,
+        "keywords": [
+            "офис",
+            "учеба",
+            "ноутбук",
+            "office",
+            "study"
+        ]
+    },
+    {
+        "id": "nb-003",
+        "name": "Игровой ноутбук ThunderPro 17",
+        "price": 129990,
+        "category": "laptop",
+        "discount": 0.20,
+        "margin_rate": 0.32,
+        "keywords": [
+            "игры",
+            "игровой",
+            "ноутбук",
+            "rtx",
+            "gaming",
+            "intel"
+        ]
+    },
+    {
+        "id": "pc-101",
+        "name": "Игровой ПК Vortex X",
+        "price": 109990,
+        "category": "desktop",
+        "discount": 0.05,
+        "margin_rate": 0.35,
+        "keywords": [
+            "игры",
+            "игровой",
+            "пк",
+            "desktop",
+            "amd",
+            "rtx"
+        ]
+    },
+    {
+        "id": "acc-501",
+        "name": "Игровая мышь Swift 7",
+        "price": 3990,
+        "category": "accessory",
+        "discount": 0.25,
+        "margin_rate": 0.5,
+        "keywords": [
+            "мышь",
+            "mouse",
+            "игры",
+            "gaming"
+        ]
+    }
+]

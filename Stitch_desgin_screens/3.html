@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+            --primary-color: #38e07b;
+            --secondary-color: #1a2e22;
+            --background-color: #121212;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-color: #285c3d;
+            --border-color: #3d5245;
+        }
+        body {
+            font-family: 'Spline Sans', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        .active-nav {
+            color: var(--primary-color);
+            position: relative;
+        }
+        .active-nav::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        .table-header-cell {
+            @apply px-6 py-4 text-left text-sm font-semibold tracking-wider;
+        }
+        .table-body-cell {
+            @apply px-6 py-4 whitespace-nowrap text-sm;
+        }
+        .status-success {
+            @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800;
+            background-color: rgba(56, 224, 123, 0.1);
+            color: var(--primary-color);
+        }
+        .status-pending {
+            @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800;
+            background-color: rgba(250, 204, 21, 0.1);
+            color: #FBBF24;
+        }
+    </style>
+</head>
+
+<body>
+  <div
+    class="relative flex size-full min-h-screen flex-col bg-[var(--background-color)] group/design-root overflow-x-hidden">
+    <div class="flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--accent-color)] px-10 py-4">
+        <div class="flex items-center gap-4 text-[var(--text-primary)]">
+          <div class="size-6 text-[var(--primary-color)]">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h1 class="text-xl font-bold tracking-[-0.015em]">Retail AI Assistant</h1>
+        </div>
+        <nav class="flex flex-1 justify-center">
+          <div class="flex items-center gap-10">
+            <a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium leading-normal transition-colors"
+              href="#">Dashboard</a>
+            <a class="text-[var(--text-primary)] active-nav text-sm font-medium leading-normal"
+              href="#">Interactions</a>
+            <a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium leading-normal transition-colors"
+              href="#">Campaigns</a>
+            <a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium leading-normal transition-colors"
+              href="#">Analytics</a>
+            <a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium leading-normal transition-colors"
+              href="#">Settings</a>
+          </div>
+        </nav>
+        <div class="flex items-center gap-4">
+          <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDI9_M5Esjz1o4D5kQQCcTHDl5K76NMkwRoUgTnOUt2fRHVH3BJB8msIu2iYGWYIRIvTiPPim-hmxP7FlzER0_5Z1G5x75mEDkLWjmWh7SHjzMyumNu9uByNxfjJTlu76pg72KbQWMkRlRrq4QxUiPgCBu5bXe9YJcUiA1oGgHQm2ejjAP8bv1U1v1B0V_08D2yKsz56QcW_RKz3heBZDFwdnP0i-GvIvGZdaLl4maui6TTYe8l0SlsmbIpvGqeQD6AWV1zxwywuw");'>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1 px-10 py-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-wrap justify-between items-center gap-4 mb-8">
+            <h2 class="text-4xl font-bold tracking-tight">Interaction History</h2>
+            <div class="flex items-center gap-4">
+              <div class="relative w-72">
+                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <svg class="h-5 w-5 text-[var(--text-secondary)]" fill="currentColor" height="24"
+                    viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
+                    </path>
+                  </svg>
+                </div>
+                <input
+                  class="form-input w-full rounded-full border-2 border-[var(--accent-color)] bg-[var(--secondary-color)] py-2.5 pl-10 pr-4 text-[var(--text-primary)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--background-color)] focus:ring-[var(--primary-color)] transition-colors"
+                  placeholder="Search interactions..." value="" />
+              </div>
+              <button
+                class="bg-transparent border-2 border-[var(--accent-color)] text-[var(--text-secondary)] px-4 py-2.5 rounded-full font-semibold hover:bg-[var(--accent-color)] hover:text-[var(--text-primary)] transition-colors duration-200 flex items-center gap-2">
+                <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M224,48H32a8,8,0,0,0-8,8V88a8,8,0,0,0,16,0V64H216V88a8,8,0,0,0,16,0V56A8,8,0,0,0,224,48ZM40,168H216v24H40Zm184,8H200v24a8,8,0,0,1-16,0V176H72v24a8,8,0,0,1-16,0V176H32a8,8,0,0,0-8,8v40a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V176A8,8,0,0,0,224,176ZM144,128a16,16,0,1,1-16-16A16,16,0,0,1,144,128Z">
+                  </path>
+                </svg>
+                Filter
+              </button>
+            </div>
+          </div>
+          <div
+            class="overflow-x-auto rounded-xl border border-[var(--border-color)] bg-[var(--secondary-color)] shadow-lg">
+            <table class="w-full text-sm text-left text-[var(--text-secondary)]">
+              <thead class="text-xs text-[var(--text-primary)] uppercase bg-[var(--accent-color)]/20">
+                <tr>
+                  <th class="table-header-cell" scope="col">Timestamp</th>
+                  <th class="table-header-cell" scope="col">Channel</th>
+                  <th class="table-header-cell" scope="col">User Phone</th>
+                  <th class="table-header-cell" scope="col">Intent</th>
+                  <th class="table-header-cell" scope="col">Result</th>
+                  <th class="table-header-cell" scope="col">Sale</th>
+                  <th class="table-header-cell text-right" scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 10:30 AM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15551234567</td>
+                  <td class="table-body-cell">Product Inquiry</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">Yes</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$150.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 11:15 AM</td>
+                  <td class="table-body-cell">Web Chat</td>
+                  <td class="table-body-cell">+15559876543</td>
+                  <td class="table-body-cell">Order Status</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 12:00 PM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15552468135</td>
+                  <td class="table-body-cell">Return Request</td>
+                  <td class="table-body-cell"><span class="status-pending">Pending</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 01:45 PM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15553692581</td>
+                  <td class="table-body-cell">Product Inquiry</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">Yes</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$200.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 02:30 PM</td>
+                  <td class="table-body-cell">Web Chat</td>
+                  <td class="table-body-cell">+15557890123</td>
+                  <td class="table-body-cell">Order Status</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 03:15 PM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15554567890</td>
+                  <td class="table-body-cell">Cancellation</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 04:00 PM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15556543210</td>
+                  <td class="table-body-cell">Product Inquiry</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">Yes</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$100.00</td>
+                </tr>
+                <tr class="border-b border-[var(--border-color)] hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 04:45 PM</td>
+                  <td class="table-body-cell">Web Chat</td>
+                  <td class="table-body-cell">+15550123456</td>
+                  <td class="table-body-cell">Order Status</td>
+                  <td class="table-body-cell"><span class="status-success">Success</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+                <tr class="hover:bg-[var(--accent-color)]/10">
+                  <td class="table-body-cell text-[var(--text-primary)]">2024-01-15 05:30 PM</td>
+                  <td class="table-body-cell">SMS</td>
+                  <td class="table-body-cell">+15559871234</td>
+                  <td class="table-body-cell">Return Request</td>
+                  <td class="table-body-cell"><span class="status-pending">Pending</span></td>
+                  <td class="table-body-cell">No</td>
+                  <td class="table-body-cell text-right text-[var(--text-primary)] font-semibold">$0.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+
+</html>

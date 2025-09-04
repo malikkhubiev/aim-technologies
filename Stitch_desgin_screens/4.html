@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Spline+Sans:wght@400;500;700"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --primary-color: #38e07b;
+      --secondary-color: #1a2e22;
+      --background-color: #121212;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --accent-color: #285c3d;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+  <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+    <div class="flex h-full grow flex-col">
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--accent-color)]/50 px-6 sm:px-10 py-4">
+        <div class="flex items-center gap-4">
+          <div class="size-6 text-[var(--primary-color)]">
+            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-xl font-bold tracking-tight">AI Retail Assistant</h2>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            href="#">Overview</a>
+          <a class="text-sm font-medium text-[var(--text-primary)]" href="#">Monitoring</a>
+          <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            href="#">Logs</a>
+          <a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+            href="#">Settings</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <button
+            class="relative flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-[var(--secondary-color)] text-[var(--text-secondary)] hover:bg-[var(--accent-color)] hover:text-[var(--text-primary)] transition-colors">
+            <span class="material-symbols-outlined">notifications</span>
+            <div class="absolute top-2 right-2.5 h-2 w-2 rounded-full bg-red-500"></div>
+          </button>
+          <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhOFVIAppKunKOIQ0FaqPNjwJzv1WsQi0FC0FXDLRtyAqvSoGciRn1GGMSyC_-a589H8ec1v5gq7VgW6U-xMYbHeU7pqN2bWbsaL2-xalGt62NeCS7cODa10LYCBISZ25nTDJzJtzA3CCwvKyguywP7Zjabvb5eh4xRmh3GDTyDbHs9BO_kG9acEKN1aIrD-Gwr30TrI0ekHLJZmk_eQr9rCnzU7GXSgC8_ywkj1wSxkKrjmOUmd8Qi4XceDSyz18hQ2eIUjyqUg");'>
+          </div>
+        </div>
+      </header>
+      <main class="flex-1 px-4 sm:px-6 lg:px-8 py-8">
+        <div class="max-w-7xl mx-auto">
+          <h1 class="text-4xl font-bold tracking-tight mb-8">Monitoring</h1>
+          <section>
+            <h2 class="text-2xl font-semibold text-[var(--text-primary)] mb-4">Cloud Services</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div
+                class="bg-[var(--secondary-color)] rounded-xl shadow-lg p-6 border border-[var(--accent-color)]/50 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-lg font-bold">YDB Health</h3>
+                  <p class="text-[var(--text-secondary)] text-sm">Status: <span class="text-green-400">Healthy</span>
+                  </p>
+                </div>
+                <div class="mt-4 h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADDr5hc2yVk5WN11SSAXRL7czp6vVci83OV0PFpUCC6nvjFcZVgqUhcv07qe0Cr5SAzm1IoO3lLYr4FuS7tZ8ugkLWiWQ3w7fqlExuc5AHndbWKO52Go6plaHI_AkMV92nWI_Cq1b1yidPZsc0o70hyuEPcc3x8BwquBHREndQ2Go9czgsA8MNqJ2BNJk6HP0x2X0voC4tIutmNXtIkxvTLhHlvKOqlYIEBnkuWmoKmsQwmx7zy_kG0E61W2h0DT-3Bn0Zu2ouMQ");'>
+                </div>
+              </div>
+              <div
+                class="bg-[var(--secondary-color)] rounded-xl shadow-lg p-6 border border-[var(--accent-color)]/50 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-lg font-bold">DataLens Connection</h3>
+                  <p class="text-[var(--text-secondary)] text-sm">Status: <span class="text-green-400">Connected</span>
+                  </p>
+                </div>
+                <div class="mt-4 h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAp8LwAL_EFhyVNJmW7W24iF0_BI5qNET0fyx2cF2jUJLP1WhNEiSYNu_8tJR4Te3ujp02JNlc3xSO2euCLXXWnWPqu1yAadzwlgXr4fsw4iG67fm5NaZ1iEQrOUMHGJS49JCEYzo7vPi_hPag9OeCFwlvXHxb9njLlfvjeEdD7ZO2mFb-bPpskGgvl9Q1wrlo8BaEFvaIlWB9L05O_0EN-PZEp7fDQpxLJGiZJ3xfOpMyHLNAXmUx4VgzGHtQlXHyEz_-RIXjgbg");'>
+                </div>
+              </div>
+              <div
+                class="bg-[var(--secondary-color)] rounded-xl shadow-lg p-6 border border-[var(--accent-color)]/50 flex flex-col justify-between">
+                <div>
+                  <h3 class="text-lg font-bold">SpeechKit Usage</h3>
+                  <p class="text-[var(--text-secondary)] text-sm">Total Requests: <span
+                      class="text-[var(--text-primary)] font-semibold">12,345</span></p>
+                </div>
+                <div class="mt-4 h-48 bg-center bg-no-repeat bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHjcV8vkNLA0HJbYX8IezgS-s8-zxXboqiYmsbGEcCLxeeahqn5ajwIyvQwA6xYN1qDeF8wWbKN7VXzQswRCrerJjFHM3YfL0LskuUmUBzK16oCImY2weFpTZGCrt1CzBNdSu-53Va6cvj2X6LZQGXR_3eLorR5US7sG9Dfkwwwlalbk1mFZxoRhKELwBRO49FgMCRGHLJy8EDSVgGKfyjMzG5vjLf1jpnaLHNl9sismSWWnl2aElbWBvlYyJW0aX4IXrvvunvWQ");'>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="mt-12">
+            <h2 class="text-2xl font-semibold text-[var(--text-primary)] mb-4">Alerts</h2>
+            <div class="space-y-4">
+              <div
+                class="flex items-center gap-4 bg-[var(--secondary-color)] p-4 rounded-xl border border-[var(--accent-color)]/50 hover:bg-[var(--accent-color)]/30 transition-colors cursor-pointer">
+                <div class="flex-shrink-0">
+                  <div class="h-2 w-2 rounded-full bg-red-500"></div>
+                </div>
+                <div class="flex-grow">
+                  <p class="font-medium text-base">High CPU Usage Detected</p>
+                  <p class="text-sm text-[var(--text-secondary)]">YDB Cluster - Instance #3</p>
+                </div>
+                <p class="text-sm text-[var(--text-secondary)]">2024-01-15 10:30 AM</p>
+              </div>
+              <div
+                class="flex items-center gap-4 bg-[var(--secondary-color)] p-4 rounded-xl border border-[var(--accent-color)]/50 hover:bg-[var(--accent-color)]/30 transition-colors cursor-pointer">
+                <div class="flex-shrink-0">
+                  <div class="h-2 w-2 rounded-full bg-yellow-500"></div>
+                </div>
+                <div class="flex-grow">
+                  <p class="font-medium text-base">DataLens Connection Latency</p>
+                  <p class="text-sm text-[var(--text-secondary)]">Main Dashboard</p>
+                </div>
+                <p class="text-sm text-[var(--text-secondary)]">2024-01-15 09:45 AM</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+</body>
+
+</html>

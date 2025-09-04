@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #38e07b;
+      --secondary-color: #1a2e22;
+      --background-color: #121212;
+      --text-primary: #e0e0e0;
+      --text-secondary: #a0a0a0;
+      --accent-color: #285c3d;
+      --border-color: #3d5245;
+    }
+    body {
+      font-family: 'Spline Sans', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    .thin-text {
+      font-weight: 400;
+    }
+    .bold-header {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--border-color)] px-10 py-4">
+<div class="flex items-center gap-4">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z"></path>
+</svg>
+</div>
+<h1 class="text-xl bold-header tracking-[-0.015em]">Retail AI Assistant</h1>
+</div>
+<div class="flex flex-1 items-center justify-end gap-6">
+<nav class="flex items-center gap-8">
+<a class="text-[var(--text-primary)] thin-text text-sm hover:text-[var(--primary-color)] transition-colors" href="#">Dashboard</a>
+<a class="text-[var(--text-secondary)] thin-text text-sm hover:text-[var(--primary-color)] transition-colors" href="#">Analytics</a>
+<a class="text-[var(--text-secondary)] thin-text text-sm hover:text-[var(--primary-color)] transition-colors" href="#">Settings</a>
+</nav>
+<button class="flex size-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-[var(--secondary-color)] text-[var(--text-primary)] hover:bg-[var(--accent-color)] transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path>
+</svg>
+</button>
+<div class="aspect-square size-10 rounded-full bg-cover bg-center bg-no-repeat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC36bPlBYCJNPIcBjfuJeGiCRM-AiyuS86-sRGQ0r8H0OVIkxSLm6SynJxId0vBReIIdTu8jZYP-SkHbYfXMxKfQP8dyPS-mdRW50VO3-to8kI9NRnTjA4l67oBY_X6C68cWrVHPQPWVr8-sPQubWFA1RgVNZF5XbYjkV1kidwg6nTmghVAknme8iof7PGCF0b1-_h8GgnhKQQ8GajjW3YKUkGGaxePy2jVsXVw9Kx7zKqsKlGh7oqMT3yJTHLTjngmdgYY7bpDgQ");'></div>
+</div>
+</header>
+<main class="flex flex-1 justify-center px-10 py-8">
+<div class="w-full max-w-7xl">
+<h2 class="text-4xl bold-header mb-8">Dashboard</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--secondary-color)] p-6 border border-[var(--accent-color)]">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Interactions</p>
+<p class="text-3xl bold-header">12,345</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--secondary-color)] p-6 border border-[var(--accent-color)]">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Sales Uplift</p>
+<p class="text-3xl bold-header text-[var(--primary-color)]">+15%</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--secondary-color)] p-6 border border-[var(--accent-color)]">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Active Users</p>
+<p class="text-3xl bold-header">2,500</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl bg-[var(--secondary-color)] p-6 border border-[var(--accent-color)]">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Avg. Margin</p>
+<p class="text-3xl bold-header">22%</p>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] p-6 lg:col-span-1">
+<p class="thin-text text-base">Sales Over Time</p>
+<p class="text-4xl bold-header">$1.2M</p>
+<div class="flex items-center gap-2">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Last 30 Days</p>
+<p class="text-sm font-medium text-[var(--primary-color)]">+10%</p>
+</div>
+<div class="flex h-48 flex-col">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 475 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="var(--primary-color)" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#sales-gradient)"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="sales-gradient" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="var(--primary-color)" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="var(--primary-color)" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] p-6 lg:col-span-1">
+<p class="thin-text text-base">Intent Recognition Accuracy</p>
+<p class="text-4xl bold-header">95%</p>
+<div class="flex items-center gap-2">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Last 30 Days</p>
+<p class="text-sm font-medium text-[var(--primary-color)]">+2%</p>
+</div>
+<div class="grid h-48 grid-flow-col auto-cols-fr items-end gap-4">
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 80%;"></div>
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 10%;"></div>
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 80%;"></div>
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 90%;"></div>
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 10%;"></div>
+<div class="bg-[var(--accent-color)] rounded-t-sm" style="height: 60%;"></div>
+<div class="bg-[var(--primary-color)] rounded-t-sm" style="height: 100%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-[var(--border-color)] p-6 lg:col-span-1">
+<p class="thin-text text-base">TTS/STT Usage</p>
+<p class="text-4xl bold-header">150k</p>
+<div class="flex items-center gap-2">
+<p class="thin-text text-sm text-[var(--text-secondary)]">Last 30 Days</p>
+<p class="text-sm font-medium text-[var(--primary-color)]">+5%</p>
+</div>
+<div class="grid h-48 content-center gap-y-6">
+<div class="grid grid-cols-[auto_1fr_auto] items-center gap-x-3">
+<p class="thin-text text-sm text-[var(--text-secondary)]">TTS</p>
+<div class="h-2 w-full rounded-full bg-[var(--secondary-color)]"><div class="h-2 rounded-full bg-[var(--primary-color)]" style="width: 65%;"></div></div>
+<p class="thin-text text-sm">65%</p>
+</div>
+<div class="grid grid-cols-[auto_1fr_auto] items-center gap-x-3">
+<p class="thin-text text-sm text-[var(--text-secondary)]">STT</p>
+<div class="h-2 w-full rounded-full bg-[var(--secondary-color)]"><div class="h-2 rounded-full bg-[var(--primary-color)]" style="width: 35%;"></div></div>
+<p class="thin-text text-sm">35%</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-2xl bold-header mb-4">Recent Interactions</h3>
+<div class="overflow-hidden rounded-xl border border-[var(--border-color)]">
+<table class="w-full text-left">
+<thead class="bg-[var(--secondary-color)]">
+<tr>
+<th class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">User</th>
+<th class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Intent</th>
+<th class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)] text-center">Sale</th>
+<th class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Amount</th>
+<th class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User A</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Product Inquiry</td>
+<td class="px-6 py-4 text-center"><input checked="" class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$50.00</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--primary-color)]">Success</td>
+</tr>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User B</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Order Status</td>
+<td class="px-6 py-4 text-center"><input class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$0.00</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--primary-color)]">Success</td>
+</tr>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User C</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Return Request</td>
+<td class="px-6 py-4 text-center"><input checked="" class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$25.00</td>
+<td class="px-6 py-4 thin-text text-sm text-red-500">Failed</td>
+</tr>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User D</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Product Inquiry</td>
+<td class="px-6 py-4 text-center"><input checked="" class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$75.00</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--primary-color)]">Success</td>
+</tr>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User E</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Order Status</td>
+<td class="px-6 py-4 text-center"><input class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$0.00</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--primary-color)]">Success</td>
+</tr>
+<tr class="border-t border-[var(--border-color)]">
+<td class="px-6 py-4 thin-text text-sm">User F</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">Product Inquiry</td>
+<td class="px-6 py-4 text-center"><input checked="" class="h-4 w-4 rounded border-[var(--border-color)] bg-transparent text-[var(--primary-color)] focus:ring-0 focus:ring-offset-0" type="checkbox"/></td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--text-secondary)]">$100.00</td>
+<td class="px-6 py-4 thin-text text-sm text-[var(--primary-color)]">Success</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

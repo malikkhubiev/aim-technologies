@@ -1,0 +1,522 @@
+[
+  {
+    "id": "a2e2a325-9619-4997-a048-577dd566cc09",
+    "channel": "telegram",
+    "user": "Павел",
+    "intent": "check_status",
+    "deal": false,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-08-10T14:59:09.204975"
+  },
+  {
+    "id": "82d2a20f-cd66-4ff5-ae37-3ad8e7167f60",
+    "channel": "phone",
+    "user": "Алексей",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 0,
+    "result": "success",
+    "timestamp": "2025-08-10T14:59:09.205051"
+  },
+  {
+    "id": "6f9f7d86-cb8e-4a9e-94d9-63fb9136443b",
+    "channel": "telegram",
+    "user": "Светлана",
+    "intent": "buy_laptop",
+    "deal": true,
+    "amount": 15000,
+    "result": "failed",
+    "timestamp": "2025-08-12T14:59:09.205089"
+  },
+  {
+    "id": "93665046-30eb-4ad7-b944-7e13bb392dee",
+    "channel": "whatsapp",
+    "user": "Иван",
+    "intent": "check_status",
+    "deal": false,
+    "amount": 15000,
+    "result": "failed",
+    "timestamp": "2025-08-05T14:59:09.205111"
+  },
+  {
+    "id": "ad3c4bd3-8225-456a-b84c-60f6edc8c2a2",
+    "channel": "telegram",
+    "user": "Анна",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-09-03T14:59:09.205132"
+  },
+  {
+    "id": "3f37ddba-f76f-41c2-9d4d-3c1fc793fcb6",
+    "channel": "whatsapp",
+    "user": "Светлана",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 120000,
+    "result": "success",
+    "timestamp": "2025-08-11T14:59:09.205155"
+  },
+  {
+    "id": "85879272-cc95-40a9-9f76-e932ff029203",
+    "channel": "telegram",
+    "user": "Павел",
+    "intent": "check_status",
+    "deal": true,
+    "amount": 49990,
+    "result": "failed",
+    "timestamp": "2025-08-19T14:59:09.205175"
+  },
+  {
+    "id": "65e5ac42-1333-4d7b-8ba7-bfb0635507a4",
+    "channel": "whatsapp",
+    "user": "Анна",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 49990,
+    "result": "success",
+    "timestamp": "2025-09-02T14:59:09.205194"
+  },
+  {
+    "id": "54789b45-93d1-4ca4-9077-b1af4a6932ff",
+    "channel": "telegram",
+    "user": "Ольга",
+    "intent": "buy_laptop",
+    "deal": false,
+    "amount": 120000,
+    "result": "failed",
+    "timestamp": "2025-08-28T14:59:09.205212"
+  },
+  {
+    "id": "dbec1a8b-2869-4135-8224-9cbefc0ce059",
+    "channel": "telegram",
+    "user": "Павел",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 15000,
+    "result": "success",
+    "timestamp": "2025-08-25T14:59:09.205239"
+  },
+  {
+    "id": "ec810e3e-c99f-4b6f-a85f-e416edcde48a",
+    "channel": "phone",
+    "user": "Павел",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-08-29T14:59:09.205258"
+  },
+  {
+    "id": "41549a86-16e3-407e-aafa-a6665a8bf26b",
+    "channel": "whatsapp",
+    "user": "Алексей",
+    "intent": "buy_phone",
+    "deal": false,
+    "amount": 120000,
+    "result": "success",
+    "timestamp": "2025-08-25T14:59:09.205276"
+  },
+  {
+    "id": "9c005522-fce6-4904-accd-fa28982f56cf",
+    "channel": "phone",
+    "user": "Анна",
+    "intent": "check_status",
+    "deal": true,
+    "amount": 0,
+    "result": "failed",
+    "timestamp": "2025-08-06T14:59:09.205295"
+  },
+  {
+    "id": "55f20f6e-bd25-4324-83e2-1a94bfaea49b",
+    "channel": "phone",
+    "user": "Ольга",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 79990,
+    "result": "success",
+    "timestamp": "2025-08-21T14:59:09.205315"
+  },
+  {
+    "id": "210a65db-71c0-4c78-9ea7-e76de3fde74b",
+    "channel": "telegram",
+    "user": "Светлана",
+    "intent": "buy_laptop",
+    "deal": false,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-22T14:59:09.205338"
+  },
+  {
+    "id": "ebce0d32-2ec1-4546-923c-d289fd3c4b98",
+    "channel": "whatsapp",
+    "user": "Анна",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 15000,
+    "result": "failed",
+    "timestamp": "2025-08-23T14:59:09.205358"
+  },
+  {
+    "id": "868ff6d5-ea0a-478d-822b-287115e067ce",
+    "channel": "phone",
+    "user": "Иван",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 25000,
+    "result": "success",
+    "timestamp": "2025-08-06T14:59:09.205380"
+  },
+  {
+    "id": "94ebcc3a-f2ea-487e-a176-1bf066cc8c67",
+    "channel": "telegram",
+    "user": "Анна",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-26T14:59:09.205401"
+  },
+  {
+    "id": "b6839f14-3bd6-458b-a6ac-34b5fd8316be",
+    "channel": "whatsapp",
+    "user": "Павел",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 0,
+    "result": "failed",
+    "timestamp": "2025-09-01T14:59:09.205419"
+  },
+  {
+    "id": "f78eec98-6a0e-45a2-ab67-618f51336057",
+    "channel": "whatsapp",
+    "user": "Мария",
+    "intent": "buy_laptop",
+    "deal": true,
+    "amount": 25000,
+    "result": "success",
+    "timestamp": "2025-08-21T14:59:09.205438"
+  },
+  {
+    "id": "98f25245-7b69-4178-bdd0-743b0002c1cf",
+    "channel": "whatsapp",
+    "user": "Ольга",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 120000,
+    "result": "failed",
+    "timestamp": "2025-08-20T14:59:09.205457"
+  },
+  {
+    "id": "bad1e61d-292e-4924-8de3-f039d19385bc",
+    "channel": "telegram",
+    "user": "Алексей",
+    "intent": "buy_laptop",
+    "deal": true,
+    "amount": 120000,
+    "result": "failed",
+    "timestamp": "2025-08-25T14:59:09.205476"
+  },
+  {
+    "id": "2eddb6cd-7455-4cd6-94ee-038f5041157a",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "buy_laptop",
+    "deal": true,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-09-02T14:59:09.205497"
+  },
+  {
+    "id": "ab55e72e-3c9a-43cf-8394-17ec42beadb4",
+    "channel": "whatsapp",
+    "user": "Ольга",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 25000,
+    "result": "success",
+    "timestamp": "2025-08-21T14:59:09.205519"
+  },
+  {
+    "id": "bb6d599c-a676-4278-b3b7-b694990644d2",
+    "channel": "phone",
+    "user": "Дмитрий",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 15000,
+    "result": "success",
+    "timestamp": "2025-08-16T14:59:09.205541"
+  },
+  {
+    "id": "9f61ed04-c6f4-4f63-bf39-1698ae32c299",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "check_status",
+    "deal": false,
+    "amount": 79990,
+    "result": "success",
+    "timestamp": "2025-08-30T14:59:09.205562"
+  },
+  {
+    "id": "aaf19370-fb37-4b17-bc4b-67982305ed64",
+    "channel": "phone",
+    "user": "Светлана",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-08-29T14:59:09.205584"
+  },
+  {
+    "id": "49e72b49-dc68-4d33-9b60-2f384c6cc955",
+    "channel": "telegram",
+    "user": "Алексей",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 49990,
+    "result": "failed",
+    "timestamp": "2025-09-01T14:59:09.205604"
+  },
+  {
+    "id": "2d731417-9a58-4ae7-9fa7-42c30c3b3a2c",
+    "channel": "telegram",
+    "user": "Алексей",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 0,
+    "result": "failed",
+    "timestamp": "2025-08-08T14:59:09.205625"
+  },
+  {
+    "id": "9a71dc6a-712b-4f3e-8dec-650d62288340",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "buy_laptop",
+    "deal": false,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-14T14:59:09.205652"
+  },
+  {
+    "id": "f2fa2756-5a85-4a50-b7ae-177e1a04a3aa",
+    "channel": "telegram",
+    "user": "Дмитрий",
+    "intent": "buy_laptop",
+    "deal": true,
+    "amount": 49990,
+    "result": "failed",
+    "timestamp": "2025-08-05T14:59:09.205683"
+  },
+  {
+    "id": "cd1ac898-3ea6-4248-b1e5-bfb61cfa04da",
+    "channel": "whatsapp",
+    "user": "Ольга",
+    "intent": "buy_phone",
+    "deal": false,
+    "amount": 49990,
+    "result": "success",
+    "timestamp": "2025-08-18T14:59:09.205703"
+  },
+  {
+    "id": "5199a7a3-f573-4792-a4b8-e20be14b20ac",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "check_status",
+    "deal": true,
+    "amount": 0,
+    "result": "failed",
+    "timestamp": "2025-08-07T14:59:09.205722"
+  },
+  {
+    "id": "bc8cfe81-81d1-469f-b621-55943befd6b4",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-08-05T14:59:09.205741"
+  },
+  {
+    "id": "b57b690c-394b-4dae-8c04-143cc0ed40ba",
+    "channel": "phone",
+    "user": "Павел",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 79990,
+    "result": "success",
+    "timestamp": "2025-08-29T14:59:09.205759"
+  },
+  {
+    "id": "69fc26ef-a3e1-4eea-98d2-1653373fc8a9",
+    "channel": "whatsapp",
+    "user": "Анна",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 79990,
+    "result": "success",
+    "timestamp": "2025-08-05T14:59:09.205779"
+  },
+  {
+    "id": "89fc1adb-931a-4a85-8212-91225482849d",
+    "channel": "whatsapp",
+    "user": "Иван",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 120000,
+    "result": "success",
+    "timestamp": "2025-09-03T14:59:09.205798"
+  },
+  {
+    "id": "34033c9b-c6fc-49dc-8428-4383828f9942",
+    "channel": "telegram",
+    "user": "Ольга",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 0,
+    "result": "success",
+    "timestamp": "2025-08-25T14:59:09.205818"
+  },
+  {
+    "id": "7a97a1e4-52a4-4099-afd9-a6a469938e2d",
+    "channel": "phone",
+    "user": "Мария",
+    "intent": "check_status",
+    "deal": true,
+    "amount": 79990,
+    "result": "failed",
+    "timestamp": "2025-08-04T14:59:09.205838"
+  },
+  {
+    "id": "88cd8dd4-3b53-4929-a19c-18b112d737a1",
+    "channel": "whatsapp",
+    "user": "Светлана",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 0,
+    "result": "success",
+    "timestamp": "2025-08-10T14:59:09.205862"
+  },
+  {
+    "id": "2202147b-00bc-475d-bd8e-84dc87a844f6",
+    "channel": "whatsapp",
+    "user": "Иван",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 25000,
+    "result": "success",
+    "timestamp": "2025-08-06T14:59:09.205905"
+  },
+  {
+    "id": "f59fa090-5702-4b6b-8140-ec51a9b2d044",
+    "channel": "whatsapp",
+    "user": "Павел",
+    "intent": "support_request",
+    "deal": false,
+    "amount": 15000,
+    "result": "failed",
+    "timestamp": "2025-08-27T14:59:09.205937"
+  },
+  {
+    "id": "3cdb4a41-79fb-46b8-8c31-20cb9186ab57",
+    "channel": "phone",
+    "user": "Анна",
+    "intent": "ask_discount",
+    "deal": false,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-06T14:59:09.205956"
+  },
+  {
+    "id": "05ab0fab-21f9-42be-8fbd-6428d4185897",
+    "channel": "telegram",
+    "user": "Мария",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-08T14:59:09.205981"
+  },
+  {
+    "id": "627f78a8-3562-4b36-9716-73ab23cd95ca",
+    "channel": "telegram",
+    "user": "Павел",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-08T14:59:09.206025"
+  },
+  {
+    "id": "3939dc1a-95e3-45ab-ae91-bf326c4e88cb",
+    "channel": "phone",
+    "user": "Светлана",
+    "intent": "buy_phone",
+    "deal": true,
+    "amount": 0,
+    "result": "success",
+    "timestamp": "2025-08-15T14:59:09.206048"
+  },
+  {
+    "id": "35df21c2-e796-41cc-a1ba-5bdedb6a6280",
+    "channel": "whatsapp",
+    "user": "Алексей",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 25000,
+    "result": "success",
+    "timestamp": "2025-08-05T14:59:09.206080"
+  },
+  {
+    "id": "c7a60eb3-dfb1-487f-831e-287d4d6ffdc0",
+    "channel": "telegram",
+    "user": "Анна",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 79990,
+    "result": "success",
+    "timestamp": "2025-08-11T14:59:09.206101"
+  },
+  {
+    "id": "3c6f95a7-84b9-418e-b7af-a03b63844657",
+    "channel": "whatsapp",
+    "user": "Мария",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 0,
+    "result": "failed",
+    "timestamp": "2025-08-18T14:59:09.206122"
+  },
+  {
+    "id": "dac2d5fa-72ae-4ddc-8dc7-1e937c1e31f6",
+    "channel": "whatsapp",
+    "user": "Павел",
+    "intent": "support_request",
+    "deal": true,
+    "amount": 49990,
+    "result": "failed",
+    "timestamp": "2025-08-24T14:59:09.206135"
+  },
+  {
+    "id": "8d334779-3e95-4b69-acc8-a6f675348a75",
+    "channel": "telegram",
+    "user": "Ольга",
+    "intent": "check_status",
+    "deal": false,
+    "amount": 15000,
+    "result": "failed",
+    "timestamp": "2025-08-25T14:59:09.206147"
+  },
+  {
+    "id": "314e24b4-e000-4fda-9f85-92b084a84e92",
+    "channel": "whatsapp",
+    "user": "Алексей",
+    "intent": "ask_discount",
+    "deal": true,
+    "amount": 25000,
+    "result": "failed",
+    "timestamp": "2025-08-16T14:59:09.206160"
+  }
+]
